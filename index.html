@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily India | Online Magazine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <span id="current-date">Loading Date...</span>
+            <div class="socials">Trending: #Cricket #Tech #Monsoon</div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">THE DAILY INDIA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tech">Tech</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#subscribe" class="sub-btn">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <span class="category-tag">FEATURED</span>
+            <h1>The Future of AI in Indian Startups</h1>
+            <p>How Bangalore is becoming the Silicon Valley of the East with new AI innovations.</p>
+            <button onclick="readArticle('Hero Article')">Read Full Story</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Latest Stories</h2>
+        <div class="grid-container">
+            
+            <article class="card">
+                <img src="https://picsum.photos/id/101/400/250" alt="Tech">
+                <div class="card-content">
+                    <span class="tag tech">Technology</span>
+                    <h3>Smart Cities: A New Era</h3>
+                    <p>Exploring how 5G is transforming urban living spaces across the metro cities.</p>
+                    <button class="read-more" onclick="readArticle('Smart Cities')">Read More</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/id/1011/400/250" alt="Travel">
+                <div class="card-content">
+                    <span class="tag lifestyle">Travel</span>
+                    <h3>Hidden Gems in Kerala</h3>
+                    <p>Away from the crowds: The backwaters you haven't seen yet.</p>
+                    <button class="read-more" onclick="readArticle('Kerala Travel')">Read More</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://picsum.photos/id/1060/400/250" alt="Cooking">
+                <div class="card-content">
+                    <span class="tag food">Food</span>
+                    <h3>Street Food Evolution</h3>
+                    <p>How traditional Indian chaat is getting a modern gourmet twist.</p>
+                    <button class="read-more" onclick="readArticle('Street Food')">Read More</button>
+                </div>
+            </article>
+
+             <article class="card">
+                <img src="https://picsum.photos/id/1035/400/250" alt="Business">
+                <div class="card-content">
+                    <span class="tag business">Business</span>
+                    <h3>Market Watch: Sensex Hits High</h3>
+                    <p>An in-depth analysis of the current fiscal year market trends.</p>
+                    <button class="read-more" onclick="readArticle('Market Watch')">Read More</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="subscribe" class="subscription-section">
+        <h2>Support Independent Journalism</h2>
+        <p>Get unlimited access to premium articles and ad-free reading.</p>
+        
+        <div class="plans">
+            <div class="plan-card">
+                <h3>Monthly</h3>
+                <div class="price">₹199<span>/mo</span></div>
+                <button onclick="subscribe('Monthly')">Choose Plan</button>
+            </div>
+            <div class="plan-card featured-plan">
+                <span class="best-value">Best Value</span>
+                <h3>Yearly</h3>
+                <div class="price">₹1,999<span>/yr</span></div>
+                <p>Save ₹389</p>
+                <button onclick="subscribe('Yearly')">Choose Plan</button>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <p>Or join our free newsletter:</p>
+            <input type="email" id="emailInput" placeholder="Enter your email address">
+            <button onclick="joinNewsletter()">Sign Up</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 The Daily India. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
